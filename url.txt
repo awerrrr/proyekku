@@ -1,0 +1,2 @@
+http://localhost:8501/
+maaf kak saya ngstuck tiga hari cuma buat up link streamlit.app
