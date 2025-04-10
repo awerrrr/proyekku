@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Dashboard E-Commerce", layout="wide")
+st.set_page_config(page_title="E-Commerce Dashboard layout="wide")
 
 st.sidebar.title("🛍️ E-Commerce Dashboard")
 st.sidebar.markdown("Analisis penjualan berdasarkan data transaksi e-commerce.")
@@ -25,12 +25,10 @@ if menu == "Beranda":
     st.header("👋 Selamat Datang di Dashboard E-Commerce!")
     st.markdown("""
     Dashboard ini menyajikan visualisasi dan analisis dari data transaksi e-commerce.  
-    Kamu bisa memfilter data berdasarkan tanggal dan melihat:
     - 📈 Tren penjualan
     - 🔥 Produk paling populer
     - 💳 Metode pembayaran yang paling sering digunakan
 
-    Gunakan **sidebar** di sebelah kiri untuk navigasi 👈  
     """)
 
     st.info("Tip: Buka menu 'Filter Data' untuk mulai eksplorasi data!")
