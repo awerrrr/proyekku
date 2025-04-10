@@ -46,7 +46,7 @@ if menu == "Beranda":
     col3.metric("Jumlah Pelanggan", f"{total_customers:,}")
 
 if menu == "Filter Data":
-    st.header("📂 Filter Data E-Commerce")
+    st.header("Filter Data E-Commerce")
 
     start_date, end_date = st.date_input(
         "Pilih Rentang Waktu",
@@ -85,7 +85,7 @@ if menu == "Filter Data":
     st.pyplot(fig1)
 
     # ========================
-    st.subheader("📦 Tren Penjualan Produk Terpopuler per Bulan")
+    st.subheader("🔥 Tren Penjualan Produk Terpopuler per Bulan")
 
     filtered_order_items = filtered_order_items.merge(
         filtered_orders[["order_id", "order_purchase_timestamp"]], on="order_id", how="left")
@@ -135,6 +135,6 @@ if menu == "Filter Data":
     payment_counts.plot(kind="bar", ax=ax3)
     ax3.set_xlabel("Metode Pembayaran")
     ax3.set_ylabel("Jumlah Transaksi")
-    ax3.set_title("Distribusi Metode Pembayaran (dalam rentang waktu)")
+    ax3.set_title("Distribusi Metode Pembayaran")
     ax3.tick_params(axis="x", rotation=45)
     st.pyplot(fig3)
