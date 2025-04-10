@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="E-Commerce Dashboard layout="wide")
+st.set_page_config(page_title="E-Commerce Dashboard", layout="wide")
 
 st.sidebar.title("🛍️ E-Commerce Dashboard")
 st.sidebar.markdown("Analisis penjualan berdasarkan data transaksi e-commerce.")
